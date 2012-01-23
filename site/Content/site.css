@@ -5,7 +5,21 @@ h1 {color:#fff;font-size:6.3em;font-family:Helvetica, sans-serif;display: inline
 span#year{color:#333;font-size:92px;margin-left:10px;font-family: 'Francois One', sans-serif;}
 .shadow6{text-shadow:3px 3px 1px #666;}
 .shadow3{text-shadow:3px 3px 1px #333;}
-div#content{padding:50px 50px 0px 50px;width:900px;margin:0 auto;text-align:center;}
-div#content p{font-size:52px;text-shadow:1px 1px 1px #666;}
+div#content{padding:0px 50px 0px 50px;width:900px;margin:0 auto;text-align:center;}
+p{font-size:52px;text-shadow:1px 1px 1px #666;}
 div#social-buttons{height:20px;padding-left:40px;}
 div.fb-like{position: relative;top: -3px;} 
+div.date
+{
+    padding:15px 0;
+    width:100%;
+    background-color:rgba(255,255,255,0.3);
+    text-align:center;
+    margin-top:42px;
+}
+div.date p
+{
+    font-size:62px;
+    margin:0;
+    color:#333;
+}
