@@ -1,53 +1,9 @@
 ﻿@{
-	Layout = null;
+	Layout = "~/Views/Shared/_Layout.cshtml";
 }
-<!doctype html> 
-<html xmlns="http://www.w3.org/1999/xhtml">
-	<head>
-		<title>MVC Summit 2012</title>
-		<link href='http://fonts.googleapis.com/css?family=Francois+One' rel='stylesheet' type='text/css' />
-		<link href='@Url.Content("Content/site.css")' rel='stylesheet' type='text/css' />
-		<script type="text/javascript" src="http://sawpf.com/1.0.js"></script>
-		<script type="text/javascript">
-			var _gaq = _gaq || [];
-			_gaq.push(['_setAccount', 'UA-20617560-1']);
-			_gaq.push(['_setDomainName', 'mvcsummit.net']);
-			_gaq.push(['_setAllowLinker', true]);
-			_gaq.push(['_trackPageview']);
-
-			(function () {
-				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-			})();
-		</script>
-	</head>
-	<body>
-<div id="fb-root"></div>
-<script>    (function (d, s, id) {
-		var js, fjs = d.getElementsByTagName(s)[0];
-		if (d.getElementById(id)) return;
-		js = d.createElement(s); js.id = id;
-		js.src = "http://connect.facebook.net/en_US/all.js#xfbml=1&appId=239050472840130";
-		fjs.parentNode.insertBefore(js, fjs);
-	} (document, 'script', 'facebook-jssdk'));</script>
-
-		<div id="header">
-			<h1 class="shadow3">MVC Summit</h1>
-			<span id="year" class="shadow6">2012</span>
-		</div>
-		<div class="date"><p>24 de março - online</p></div>
-		<div id="content">
-			<p>
-				Um evento inteiramente dedicado a WEB
-			</p>
-			<div id="social-buttons">
-				<div class="fb-like" data-href="http://mvcsummit.net" data-send="true" data-layout="button_count" data-width="110" data-show-faces="true">
-				</div>	
-				<a href="https://twitter.com/share" class="twitter-share-button" data-lang="pt" data-hashtags="MVCSummit2012">Tweetar</a>
-				<script>    !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = "//platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs); } } (document, "script", "twitter-wjs");</script>
-			</div>
-		</div>
-	</body>
-</html>
+	@{ Html.RenderPartial("_home");}
+	@{Html.RenderPartial("_grade");}
+	@{Html.RenderPartial("_palestrantes");}
+	@{Html.RenderPartial("_inscricao");}
+	@{Html.RenderPartial("_contato");}
 

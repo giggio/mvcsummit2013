@@ -1,25 +1,130 @@
-﻿body, h1{border:0;margin:0;}
-body{background:url(bg.png);font-family:Helvetica, sans-serif;}
-div#header {padding:50px 50px 0px 50px;	width:900px;margin:0 auto;text-align:center;}
-h1 {color:#fff;font-size:6.3em;font-family:Helvetica, sans-serif;display: inline-block;}
-span#year{color:#333;font-size:92px;margin-left:10px;font-family: 'Francois One', sans-serif;}
-.shadow6{text-shadow:3px 3px 1px #666;}
-.shadow3{text-shadow:3px 3px 1px #333;}
-div#content{padding:0px 50px 0px 50px;width:900px;margin:0 auto;text-align:center;}
-p{font-size:52px;text-shadow:1px 1px 1px #666;}
-div#social-buttons{height:20px;padding-left:40px;}
-div.fb-like{position: relative;top: -3px;} 
-div.date
+﻿body
 {
-    padding:15px 0;
-    width:100%;
-    background-color:rgba(255,255,255,0.2);
-    text-align:center;
-    margin-top:42px;
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, sans-serif;
 }
-div.date p
+div#menu
 {
-    font-size:62px;
-    margin:0;
-    color:#333;
+    padding: 10px;
+    background: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 0 10px #333;
+    background: url(/Content/bg_menu.png);
+    z-index: 1000;
+}
+div#menu h1
+{
+    display: inline-block;
+    width: 465px;
+    margin: 0;
+    margin-left: 50px;
+    font-size: 46px;
+    color: #fff;
+    text-shadow: 1px 1px 1px #555;
+    font-family: 'Yanone Kaffeesatz' , Helvetica, sans-serif;
+}
+div#menu ul
+{
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-family: 'Yanone Kaffeesatz' , Helvetica, sans-serif;
+}
+div#menu ul li
+{
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 30px;
+}
+div#menu ul li a, div#menu ul li a:visited
+{
+    color: #fff;
+    text-decoration: none;
+}
+div#menu ul li a:active
+{
+    border-bottom: solid 3px #fff;
+}
+
+div.pages
+{
+    padding: 70px 10px 0 10px;
+    height: 700px;
+}
+div.pages h2
+{
+    font-size: 56px;
+    margin: 10px 0 10px 50px;
+    text-transform: uppercase;
+    font-family: 'Yanone Kaffeesatz' , Helvetica, sans-serif;
+    text-shadow: 1px 1px 2px #444;
+}
+
+div#container
+{
+    width: 700px;
+    background-color: rgba(0,0,0,0.1);
+    padding: 20px;
+    border-radius: 5px;
+    margin: 50px auto 0 auto;
+    box-shadow: 1px 1px 5px #333;
+    position: relative;
+}
+
+div#home
+{
+    background: url(/Content/bg1.png);
+}
+div#container h2{ color: #fff;font-size: 46px;text-align: center;margin: 10px;}
+
+div#grade
+{
+    background: url(/Content/bg2.png);
+}
+div#container table
+{
+    width: 100%;
+    text-align: center;
+}
+div#container table tr
+{
+    height: 30px;
+    background: rgba(255,255,255,0.5);
+}
+div#container table tr td
+{
+    padding: 20px;
+    border-radius: 3px;
+}
+div#container table tr.almoco
+{
+    padding: 20px;
+    border-radius: 3px;
+    background: rgba(255,255,255,0.0);
+}
+
+div#palestrantes
+{
+    background: url(/Content/bg3.png);
+}
+
+div#inscricao
+{
+    background: url(/Content/bg4.png);
+}
+
+div#contato
+{
+    background: url(/Content/bg5.png);
+}
+
+div#social-buttons
+{
+    display: inline-block;
 }
