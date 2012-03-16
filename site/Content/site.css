@@ -81,16 +81,48 @@ div#home
 {
     background: url(/Content/bg1.png);
 }
-div#container h2{ color: #fff;font-size: 46px;text-align: center;margin: 10px;}
-
+div#container h2
+{
+    color: #fff;
+    font-size: 46px;
+    text-align: center;
+    margin: 10px;
+}
+div#home a.inscricao
+{
+    display: block;
+    width: 250px;
+    background-color: #359E33;
+    padding: 1px;
+    font-family: 'Yanone Kaffeesatz' , Helvetica, sans-serif;
+    color: white;
+    font-size: 42px;
+    text-align: center;
+    border-radius: 7px;
+    line-height: 60px;
+    padding-bottom: 7px;
+    margin: 0 auto;
+    box-shadow: 1px 1px 3px #333;
+    text-shadow: 1px 1px 1px #333;
+}
 div#grade
 {
     background: url(/Content/bg2.png);
+}
+div#grade div#container span.alteracoes
+{
+    text-align: center;
+    font-style: italic;
+    display: block;
 }
 div#container table
 {
     width: 100%;
     text-align: center;
+}
+div#container table thead tr
+{
+    background: rgba(255,255,255,0.4);
 }
 div#container table tr
 {
@@ -99,12 +131,18 @@ div#container table tr
 }
 div#container table tr td
 {
-    padding: 20px;
+    padding: 10px;
     border-radius: 3px;
+    width: 200px;
+}
+div#container table tr td h3
+{
+    margin-top: 0;
+    margin-bottom: 3px;
 }
 div#container table tr.almoco
 {
-    padding: 20px;
+    padding: 5px;
     border-radius: 3px;
     background: rgba(255,255,255,0.0);
 }
