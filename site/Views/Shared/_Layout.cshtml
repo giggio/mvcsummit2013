@@ -10,13 +10,16 @@
     <script type="text/javascript" src='@Url.Content("~/Scripts/jquery.tinyscrollbar.min.js")'></script>
     <script>
         $(document).ready(function () {
-            $('ul li a').click(function () {
+            $('ul li a, .inscricao').click(function(){
                 var elementClicked = $(this).attr("href");
                 var destination = $(elementClicked).offset().top;
                 $("html:not(:animated),body:not(:animated)").animate({ scrollTop: destination - 0 }, 1000);
                 return false;
             });
+
         });
+
+        
     </script>
     <link rel="stylesheet" href="../../Content/site.css" />
 </head>
